@@ -18,10 +18,11 @@ public class hannuota {
         }
         // n>1的情况下进行已下过程
 else {
+    //将n-1个盘子从from移动到aux,此时to作为辅助柱
         hanoi(n - 1, from, aux, to);
-        // 将第 n 个盘子从源柱移动到目标柱
+        // 将最大的盘子从from移动到to
         System.out.println("盘片 " + n + ": " + from + " -> " + to);
-        // 将 n-1 个盘子从辅助柱移动到目标柱
+        // 将n-1个盘子从aux移动to，此时from作为辅助柱
         hanoi(n - 1, aux, to, from);
     }}
 //char 表示单字符
