@@ -12,18 +12,18 @@ public class hannuota {
             System.out.println("盘片 1: " + from + " -> " + to);
             return;
         }
-        else if(n<=0){
+        else if(n <= 0){
             System.out.println("请输入大于0的正整数");
             return;
         }
+
         // n>1的情况下进行已下过程
-else {
         hanoi(n - 1, from, aux, to);
         // 将第 n 个盘子从源柱移动到目标柱
         System.out.println("盘片 " + n + ": " + from + " -> " + to);
         // 将 n-1 个盘子从辅助柱移动到目标柱
         hanoi(n - 1, aux, to, from);
-    }}
+    }
 //char 表示单字符
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

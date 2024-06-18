@@ -17,7 +17,6 @@ public class feibonaqi {
         //1、a + b = temp
         //2、将 temp 赋给 b
         //3、将 b 的值赋给 a
-        //4、将 temp值 赋给 b
         while(b<=n) {
            int temp=a+b;
             a=b;
